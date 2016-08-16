@@ -1,4 +1,4 @@
-FROM java:8-jdk
+FROM java:8
 MAINTAINER Jan Schulte <jan@janschulte.com>
 
 ENV TRIFECTA_VERSION=0.21.0 TRIFECTA_URL=https://github.com/ldaniels528/trifecta/releases/download
