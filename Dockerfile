@@ -10,7 +10,7 @@ RUN wget $TRIFECTA_URL/v$TRIFECTA_VERSION/trifecta_ui-$TRIFECTA_VERSION.zip && \
 	mv trifecta_ui-$TRIFECTA_VERSION trifecta
 
 COPY config.properties setup.sh entrypoint.sh ./trifecta/
-RUN groupadd -r trifecta && useradd -r -g trifecta trifecta && chown -R trifecta /home && chgrp -R trifecta /home && chmod a+x trifecta/entrypoint.sh
+RUN groupadd -r trifecta && useradd -r -g trifecta trifecta && chown -R trifecta /home && chgrp -R trifecta /home
 USER trifecta
 
 WORKDIR /home/trifecta
