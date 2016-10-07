@@ -1,5 +1,6 @@
 # docker-trifecta
 
+Docker container for trifecta v0.21.2. Supports Kafka 0.10
 Start the container with the following command:
 
 ```sh
