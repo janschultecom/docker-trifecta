@@ -9,7 +9,7 @@ if [ -z "${ZK_HOST}" ]; then
 fi
 
 echo "Using Zookeeper host: '$ZK_HOST'";
-sed -i -e s/{{ZK_HOST}}/${ZK_HOST}/ "$TRIFECTA_CONFIG"
+sed -i -e s#{{ZK_HOST}}#${ZK_HOST}# "$TRIFECTA_CONFIG"
 
 # Start ui
 /home/trifecta/trifecta_ui/bin/trifecta_ui -Dpidfile.path=/dev/null
